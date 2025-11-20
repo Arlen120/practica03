@@ -33,9 +33,7 @@ def main():
     ventas = analizador.ventas_por_provincia(provincia_formateada)
     print(f"\tVentas de {provincia_formateada}: ${ventas:,.2f}")
 
-    # ======================================================
-    # NUEVA ESTADÍSTICA 1: EXPORTACIONES TOTALES POR MES
-    # ======================================================
+    # Estadística extra 1: exportaciones totales por cada mes (porque también queríamos saber eso)
     print("\nExportaciones totales por mes:")
 
     exportaciones = analizador.exportaciones_totales_por_mes()
@@ -43,9 +41,7 @@ def main():
     for mes in sorted(exportaciones.keys()):
         print(f"\tMes {mes}: ${exportaciones[mes]:,.2f}")
 
-    # ======================================================
-    # NUEVA ESTADÍSTICA 2: PROVINCIA CON MAYOR IMPORTACIÓN
-    # ======================================================
+    # Estadística extra 2: provincia que más importó (la campeona del shopping internacional)
     print("\nProvincia con mayor volumen de importaciones:")
 
     provincia_top = analizador.provincia_mayor_importacion()
