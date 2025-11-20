@@ -47,9 +47,9 @@ class Analizador:
 
         return resumen[nombre]
 
-    # ===============================================================
-    # NUEVA FUNCIÓN 1: EXPORTACIONES TOTALES POR MES
-    # ===============================================================
+
+    # exportacion total por mes 
+
     def exportaciones_totales_por_mes(self):
         """Suma exportaciones agrupadas por MES."""
         totales = {}
@@ -62,11 +62,11 @@ class Analizador:
                 continue
         return totales
 
-    # ===============================================================
-    # NUEVA FUNCIÓN 2: PROVINCIA CON MAYOR IMPORTACIÓN
-    # ===============================================================
+
+    # provincia con mayor importacion
+
     def provincia_mayor_importacion(self):
-        """Devuelve la provincia con mayor total de importaciones."""
+        """Se devolvera la provincia con mayor importacion."""
         totales = {}
         for fila in self.datos:
             try:
@@ -77,6 +77,6 @@ class Analizador:
                 continue
 
         if not totales:
-            raise ValueError("No existen datos válidos de importaciones.")
+            raise ValueError("Datos Invalidos.")
 
         return max(totales, key=totales.get)
