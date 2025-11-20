@@ -65,7 +65,7 @@ docs/_build/
 *.egg-info/
 .eggs/
 MANIFEST
-
+venv/
 # --- Archivos de Jupyter Notebook ---
 .ipynb_checkpoints
 
