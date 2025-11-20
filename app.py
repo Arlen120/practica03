@@ -44,7 +44,7 @@ def main():
         print(f"\tMes {mes}: ${exportaciones[mes]:,.2f}")
 
     # ======================================================
-    # NUEVA ESTADÍSTICA 2: PROVINCIA CON MAYOR IMPORTACIÓN prueba
+    # NUEVA ESTADÍSTICA 2: PROVINCIA CON MAYOR IMPORTACIÓN
     # ======================================================
     print("\nProvincia con mayor volumen de importaciones:")
 
